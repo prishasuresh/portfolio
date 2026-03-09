@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRISHA SURESH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Nunito:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="sparkle-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-id">PRISHA_SURESH.EXE</div>
+  <ul class="nav-links">
+    <li><a data-page="home" class="active" id="nav-home">HOME</a></li>
+    <li><a data-page="char" id="nav-char">ABOUT</a></li>
+    <li><a data-page="quests" id="nav-quests">WORK</a></li>
+    <li><a data-page="contact" id="nav-contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════ HOME PAGE ══════════════════ -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="bracket bracket-tl"></div>
+    <div class="bracket bracket-tr"></div>
+    <div class="bracket bracket-bl"></div>
+    <div class="bracket bracket-br"></div>
+
+    <canvas id="hero-portrait" width="360" height="360"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <div class="hero-status">
+      <span class="status-dot"></span>
+      AVAILABLE FOR HIRE
+    </div>
+    <h1 class="hero-name">
+      <span class="first">PRISHA</span>
+      <span class="last">SURESH</span>
+    </h1>
+    <p class="hero-tagline">
+      <span class="hi">copywriter</span><span class="sep">✦</span>brand strategist<span class="sep">✦</span><span class="hi">fandom nerd</span>
+    </p>
+    <div class="hero-btns">
+      <button class="btn btn-primary" data-page="quests"><span>▶</span> VIEW WORK</button>
+      <button class="btn btn-secondary" data-page="contact"><span>▶</span> CONTACT ME</button>
+    </div>
+    <div class="xp-bar-wrap">
+      <div class="xp-label">
+        <span>LVL 01 — ENTRY LEVEL MARKETER</span>
+        <span>3600 / 5000 XP</span>
+      </div>
+      <div class="xp-track"><div class="xp-fill"></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ CHARACTER PAGE ══════════════════ -->
+<div class="page" id="page-char">
+  <div class="page-content char-page">
+
+    <div class="sec-header reveal">
+      <div class="sec-num">[ 01 ]</div>
+      <h2 class="sec-title">CHARACTER <span class="ac">SHEET</span></h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="char-grid">
+
+      <!-- Left col: ability scores + proficiencies -->
+      <div style="display:flex;flex-direction:column;gap:24px;">
+        <div class="stat-block reveal">
+          <div class="stat-block-title">SKILL PROFICIENCIES <span style="color:var(--orange)">✦</span></div>
+          <div class="dnd-stats">
+            <div class="dnd-stat"><span class="dnd-stat-name">COPY&#8203;WRITING</span></div>
+            <div class="dnd-stat"><span class="dnd-stat-name">BRAND<br>STRATEGY</span></div>
+            <div class="dnd-stat"><span class="dnd-stat-name">TREND<br>ANALYSIS</span></div>
+            <div class="dnd-stat"><span class="dnd-stat-name">FIELD<br>MARKETING</span></div>
+            <div class="dnd-stat"><span class="dnd-stat-name">BRAND<br>PARTNERSHIPS</span></div>
+            <div class="dnd-stat"><span class="dnd-stat-name">PROJECT<br>MGMT</span></div>
+          </div>
+        </div>
+
+        <!-- Tools / Equipment -->
+        <div class="stat-block reveal">
+          <div class="stat-block-title">EQUIPMENT <span style="color:var(--orange)">✦</span></div>
+          <div class="stat-block-row"><span class="proficient">Ads Managers</span><span>EQUIPPED</span></div>
+          <div class="stat-block-row"><span class="proficient">Canva / Photoshop</span><span>EQUIPPED</span></div>
+          <div class="stat-block-row"><span class="proficient">Excel</span><span>EQUIPPED</span></div>
+          <div class="stat-block-row"><span class="proficient">SQL</span><span>LEARNING</span></div>
+        </div>
+      </div>
+
+      <!-- Right col: bio -->
+      <div style="display:flex;flex-direction:column;gap:32px;">
+        <div class="stat-block reveal">
+          <div class="stat-block-title">ABOUT ME <span style="color:var(--orange)">✦</span></div>
+          <p class="char-bio" style="font-family:var(--pixel);font-size:11px;color:var(--white);line-height:2;">Hello, I'm Prisha!</p>
+          <br/>
+          <p class="char-bio">I'm currently a senior at UC Berkeley majoring in Media Studies and Economics. Over the last few years, I've held a number of different marketing roles, both technical and creative, and I've always loved the process of deep-diving into a brand, engaging with their audiences, and <em>crafting the perfect story</em>.</p>
+          <br/>
+          <p class="char-bio">Professionally, I currently lead UC Berkeley's chapter of the <em>American Advertising Federation</em>, a student-led agency with over 40 active members that participates in contract work with a variety of brands and competes in the National Student Advertising Competition against 200+ universities.</p>
+          <br/>
+          <p class="char-bio">On the side, I'm also writing a 60+ page honors thesis on fandom and community behaviors, volunteering at my local food pantry, and growing my niche earring collection.</p>
+        </div>
+
+        <!-- Experience -->
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ QUESTS PAGE ══════════════════ -->
+<div class="page" id="page-quests">
+  <div class="page-content quest-page">
+
+    <div class="sec-header reveal">
+      <div class="sec-num">[ 02 ]</div>
+      <h2 class="sec-title">QUESTS</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="gif-grid">
+      <div class="gif-card reveal" data-project="1">
+        <div class="gif-preview">
+          <img src="images/img_01.gif" alt="Quest 1">
+          <div class="gif-hover-overlay"><span class="gif-hover-title">INDEED</span></div>
+        </div>
+      </div>
+      <div class="gif-card reveal" data-project="2">
+        <div class="gif-preview">
+          <img src="images/img_02.gif" alt="Quest 2">
+          <div class="gif-hover-overlay"><span class="gif-hover-title">TIDE</span></div>
+        </div>
+      </div>
+      <div class="gif-card reveal" data-project="3">
+        <div class="gif-preview">
+          <img src="images/img_03.gif" alt="Quest 3">
+          <div class="gif-hover-overlay"><span class="gif-hover-title">AT&T</span></div>
+        </div>
+      </div>
+      <div class="gif-card reveal" data-project="4">
+        <div class="gif-preview">
+          <img src="images/img_04.gif" alt="Quest 4">
+          <div class="gif-hover-overlay"><span class="gif-hover-title">UJI TIME</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MINI QUESTS SECTION -->
+    <div class="mini-section">
+      <div class="sec-header reveal" style="margin-top:64px;">
+        <h2 class="sec-title">SIDE QUESTS</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="carousel-wrap reveal">
+
+        <!-- PREV / NEXT -->
+        <button class="car-btn car-prev" id="car-prev">◀</button>
+        <button class="car-btn car-next" id="car-next">▶</button>
+
+        <!-- TRACK -->
+        <div class="carousel-track" id="car-track">
+
+          <!-- CARD 1: GU ENERGY -->
+          <div class="car-card">
+            <div class="car-tag">CASE COMP WINNER · STRATEGY</div>
+            <div class="car-title">GU ENERGY</div>
+            
+            <div class="car-slides-row">
+              <img src="images/img_05.jpg"  class="car-slide" alt="GU Cover">
+              <img src="images/img_06.jpg"  class="car-slide" alt="GU Segment">
+            </div>
+          </div>
+
+          <!-- CARD 2: DUFFL -->
+          <div class="car-card">
+            <div class="car-tag">FIELD MARKETING · COPY</div>
+            <div class="car-title">DUFFL</div>
+            <div class="car-slides-row">
+              <img src="images/img_07.jpg" class="car-slide" style="width:calc(50% - 10px);max-width:480px;border-radius:4px;" alt="Duffl slide 21">
+              <img src="images/img_08.jpg" class="car-slide" style="width:calc(50% - 10px);max-width:480px;border-radius:4px;" alt="Duffl slide 32">
+            </div>
+          </div>
+
+          <!-- CARD 3: AGNI -->
+          <div class="car-card">
+            <div class="car-tag">BRAND IDENTITY · COPY · CLASS PROJECT</div>
+            <div class="car-title">AGNI</div>
+            <div class="car-slides-row">
+              <img src="images/img_09.jpg" class="car-slide" style="width:calc(50% - 10px);max-width:480px;border-radius:4px;" alt="Agni slide 10">
+              <img src="images/img_10.jpg" class="car-slide" style="width:calc(50% - 10px);max-width:480px;border-radius:4px;" alt="Agni slide 11">
+            </div>
+          </div>
+
+          <!-- CARD 4: THESIS + NDA -->
+          <div class="car-card">
+            <div class="car-tag">B2B · EMAIL MARKETING</div>
+            <div class="car-title">INTEGRAL AD SCIENCE</div>
+            <div class="car-locked">
+              <div class="car-classified" id="nda-typer" style="font-size:clamp(11px,1.6vw,18px);letter-spacing:0.15em;"></div>
+            </div>
+          </div>
+
+
+        </div><!-- end track -->
+
+        <!-- DOTS -->
+        <div class="car-dots" id="car-dots">
+          <span class="car-dot active" data-i="0"></span>
+          <span class="car-dot" data-i="1"></span>
+          <span class="car-dot" data-i="2"></span>
+          <span class="car-dot" data-i="3"></span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- ══════════════════ PROJECT PAGES ══════════════════ -->
+<div class="page" id="page-project">
+  <div class="page-content project-page">
+
+    <!-- BACK BUTTON -->
+    <button class="back-btn" id="back-btn"><span style="display:inline-block;transform:translateY(-1px);">◀</span> BACK TO WORK</button>
+
+    <!-- ── SECTION A: HERO ── -->
+    <section class="proj-hero">
+      <div class="proj-hero-left">
+<h1 class="proj-title" id="proj-title">Project Title</h1>
+        <p class="proj-slogan" id="proj-slogan"></p>
+        <div class="proj-tags" id="proj-tags"></div>
+        <p class="proj-blurb" id="proj-blurb">Short blurb about the project goes here.</p>
+      </div>
+      <div class="proj-hero-right" id="proj-collage">
+        <!-- collage images injected by JS -->
+        <div class="proj-collage-placeholder">[ ASSETS ]</div>
+      </div>
+    </section>
+
+    <!-- ── SECTION B: VIDEO ── -->
+    <section class="proj-video-section" id="proj-video-section">
+      <div class="proj-section-header">
+        <h2 class="proj-section-title">WATCH THE <span class="ac">AD</span></h2>
+      </div>
+      <div class="proj-video-wrap" id="proj-video-wrap">
+        <div class="proj-video-placeholder">▶ VIDEO EMBED</div>
+      </div>
+    </section>
+
+    <!-- ── SECTION C: STRATEGY ── -->
+    <section class="proj-strat-section" id="proj-strat-section">
+      <div class="proj-section-header">
+        <h2 class="proj-section-title" id="proj-strat-title">READ THE <span class="ac">STRATEGY</span></h2>
+      </div>
+      <div class="proj-strat-carousel">
+        <button class="proj-car-btn" id="proj-car-prev">◀</button>
+        <div class="proj-car-viewport">
+          <div class="proj-car-track" id="proj-car-track">
+            <!-- slides injected by JS -->
+          </div>
+        </div>
+        <button class="proj-car-btn" id="proj-car-next">▶</button>
+      </div>
+      <div class="proj-car-dots" id="proj-car-dots"></div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ══════════════════ CONTACT PAGE ══════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-content" style="background:var(--bg2);min-height:100vh;display:flex;flex-direction:column;justify-content:center;color:var(--white);">
+    <div class="sec-header" style="justify-content:center;">
+      <div class="sec-num">[ 03 ]</div>
+      <h2 class="sec-title">SEND <span class="ac">MESSAGE</span></h2>
+    </div>
+    <div class="contact-box">
+      <p class="contact-prompt">
+        <span>&gt;</span> LOOKING TO CHAT?
+      </p>
+      <a class="contact-email" href="mailto:prishasuresh04@gmail.com">prishasuresh04@gmail.com</a>
+      <a class="contact-email" href="mailto:prisha_suresh@berkeley.edu">prisha_suresh@berkeley.edu</a>
+      <div class="contact-links">
+        <a class="contact-link" href="https://www.linkedin.com/in/prisha-suresh/" target="_blank">LINKEDIN</a>
+        <a class="contact-link" href="https://drive.google.com/file/d/1uXZyFrt_uKMquuXVKW40KdM_EGW1Hqxs/view?usp=sharing" target="_blank">RESUME.PDF</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><span>PRISHA_SURESH</span> © 2026</p>
+  
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
